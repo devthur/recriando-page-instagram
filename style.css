@@ -131,15 +131,40 @@ body {
     background-image: url(./img/googleplay-button.png);
 }
 
+footer {
+    position: relative;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.pg-footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+.item-footer {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 10px;
+}
+
 @media(max-width: 1024px) {
     .ig-wrapper {
         width: 90%;
+        align-items: center;
+    }
+    footer {
+        align-items: center;
     }
 }
 
 @media(max-width: 650px) {
     .ig-wrapper {
         width: 90%;
+        align-items: center;
     }
     .ig-foto {
         display: none;
@@ -153,6 +178,9 @@ body {
     }
     .ig-logout {
         background-color: rgb(243, 243, 243);
+    }
+    footer {
+        flex-wrap: wrap;
     }
 }
 
